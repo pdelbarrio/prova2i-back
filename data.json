@@ -1,0 +1,6 @@
+[
+  { "clientCode": 1, "stationCode": 88, "amount": 50 },
+  { "clientCode": 2, "stationCode": 76, "amount": 56 },
+  { "clientCode": 3, "stationCode": 23, "amount": 76 },
+  { "clientCode": 4, "stationCode": 12, "amount": 150 }
+]
