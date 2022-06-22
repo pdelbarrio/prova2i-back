@@ -1,6 +1,8 @@
 const express = require("express");
 const cors = require("cors");
+const morgan = require("morgan");
 const http = require("http");
+const { setError } = require("./helpers/utils");
 
 //Routes
 const dataRoutes = require("./routes/data.routes");
@@ -32,6 +34,7 @@ app.use(
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(morgan("dev"));
 
 //Route
 app.use("/api/data", dataRoutes);

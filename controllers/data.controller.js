@@ -3,6 +3,7 @@ const { setError } = require("../helpers/utils");
 
 const getData = async (req, res, next) => {
   try {
+    // console.log(req, res);
     const allData = await Data.find({});
 
     return res.status(200).json({
