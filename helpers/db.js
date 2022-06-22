@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 const config = require("../config");
 
-const urlDB = process.env.MONGO_URI;
+const urlDB = "mongodb+srv://admin:prova2i@cluster0.gemfy0v.mongodb.net/2idb";
 
 const connectDb = async () => {
   try {
